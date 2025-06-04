@@ -58,7 +58,6 @@ export const Footer = () => {
 
   return (
     <div>
-
     {/* Accordion Component */}
     <h2>ACCORDIAN</h2>
     <Accordion defaultActiveKey="0">
