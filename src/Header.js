@@ -1,30 +1,35 @@
 import React, { useState } from 'react'
 
 export const Header = () => {
-    let a=10,rollNo=47,name="Anushruti Mahato",studentId=249001001147,branch="Computer Science and Engineering",
-    college="Chaibasa Engineeering College",year="2nd Year";
-    
-    const[count,setCount]=useState(10);
+    let rollNo=10,name="Anushruti Mahato",college="Chaibasa Engineering College",
+    studentId=249001001147,branch="Computer Science and Engineering",year="2nd year";
+    const[count,setCount]=useState(4);
     const increment=()=>{
-        setCount(count+1)
+        setCount(count+1);
     }
     const decrement=()=>{
-        setCount(count-1)
+        setCount(count-1);
     }
   return (
     <div>
-        <h2>Counting Operator</h2>
-        <p>Value of a count:{count}</p>
-        <p><button onClick={increment}>Increment by 1</button></p>
-        <p><button onClick={decrement}>Decrement by 1</button></p>
-
-        <h2>Student Details</h2>
-        <p>Roll No:{rollNo}</p>  
-        <p>Name:{name}</p>   
-        <p>Year:{year}</p>   
-        <p>Student ID:{studentId}</p> 
-        <p>Branch:{branch}</p>  
-        <p>College:{college}</p>    
+        <p>Header</p>
+        <button onClick={increment}>
+            Increment Button
+        </button>
+        <br></br>
+        <button onClick={decrement}>
+            decrement Button
+        </button>
+        <p>Value of count:{count}</p>
+        <p>Value of Set count:{setCount}</p>
+        <p>
+            Roll No:{rollNo} <br></br>
+            Name:{name}<br></br>
+            Year:{year}<br></br>
+            Student ID:{studentId}<br></br>
+            College:{college}<br></br>
+            Branch:{branch}<br></br>
+        </p>
     </div>
   )
 }

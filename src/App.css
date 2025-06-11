@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
+.row1{
+  background:#E2D9F8;
+  padding: 10px;
+  margin:10px;
+}
 
+.button1{
+  margin:10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
